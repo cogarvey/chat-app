@@ -1,2 +1,2 @@
-Client side - CSS, HTML, JavaScript, jQuery, Node.js
-Back End - Express
+Client side - CSS, HTML, JavaScript, jQuery
+Back End - Node.js, Express
