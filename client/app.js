@@ -2,10 +2,9 @@ var socket = io();
 
 $('form').on('submit', function() {
   var text = $('#message').val();
-  var name = $('#initials').val();
-  socket.emit('initials', name);
-  socket.emit('message', text);
-  $('#initials').val('');
+  var initials = $('#initials').val();
+  var concat = initials + ' says: ' + text;
+  socket.emit('message', concat);
   $('#message').val('');
   return false;
 });
