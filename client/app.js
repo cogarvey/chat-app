@@ -3,8 +3,7 @@ var socket = io();
 $('form').on('submit', function() {
   var text = $('#message').val();
   var initials = $('#initials').val();
-  var concat = initials + ' says: ' + text;
-  socket.emit('message', concat);
+  socket.emit('message', initials + ' says: ' + text);
   $('#message').val('');
   return false;
 });
