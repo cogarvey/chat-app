@@ -1,19 +1,25 @@
-var express = require('express');
+var express = require("express");
 var app = express();
 
-var http = require('http');
+var http = require("http");
 var server = http.Server(app);
 
-app.use(express.static('client'));
+app.use(express.static("client"));
 
-var io = require('socket.io')(server);
+var io = require("socket.io")(server);
 
-io.on('connection', function (socket) {
-  socket.on('message', function (msg) {
-    io.emit('message', msg);
+var array = [];
+
+io.on("connection", function (socket) {
+  array.forEach(function (msg) {
+    socket.emit("message", msg);
+  });
+  socket.on("message", function (msg) {
+    array.push(msg);
+    io.emit("message", msg);
   });
 });
 
-server.listen(8080, function() {
-  console.log('Chat server listening on port 8080!');
-})
+server.listen(8080, function () {
+  console.log("Chat server listening on port 8080!");
+});
