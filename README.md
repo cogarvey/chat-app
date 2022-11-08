@@ -3,8 +3,10 @@
 
 Hello! Welcome to my basic chat app :) 
 
+
 ## Created By
 - [@Colleen Garvey](https://github.com/cogarvey)
+
 
 
 ## Getting Started
@@ -21,6 +23,7 @@ Hello! Welcome to my basic chat app :)
 ```
 4. The app will be served at <http://localhost:8080/>.
 5. Go to <http://localhost:8080/> in your browser.
+
 
 ## Tech Stack
 
