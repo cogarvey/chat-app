@@ -1,7 +1,7 @@
 
 # ChatApp
 
-Hello! Welcome to my basic chat app :) 
+Hello! Welcome to my basic chat app. Please see below for some info...
 
 
 ## Created By
