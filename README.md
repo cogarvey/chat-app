@@ -1,7 +1,7 @@
 
 # ChatApp
 
-Hello! Welcome to my basic chat app. Please see below for some info...
+Hello! ChatApp is a basic messaging platform that allows you to communicate with users through messaging! Please see below for some info...
 
 
 ## UI/UX
